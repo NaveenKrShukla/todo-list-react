@@ -1,0 +1,126 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.to-do-list {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark .to-do-list {
+  background-color: #1e1e1e;
+}
+
+.to-do-list h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.toggle-theme {
+  margin-bottom: 1rem;
+  padding: 8px 12px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.to-do-list input[type="text"] {
+  padding: 10px;
+  flex: 1;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.to-do-list div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.dark li {
+  background: #2a2a2a;
+}
+
+.text {
+  flex: 1 1 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.delete-button,
+.move-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+@media (min-width: 600px) {
+  .text {
+    flex: 1;
+  }
+  .delete-button,
+  .move-button {
+    min-width: 40px;
+  }
+  .to-do-list div {
+    flex-wrap: nowrap;
+  }
+}
