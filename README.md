@@ -12,7 +12,7 @@ A responsive, theme-toggleable to-do list built with React.
 
 ### 🚀 Live Demo
 
-[Your deployed URL here]
+https://todo-list-react-delta-green.vercel.app/
 
 ### 🛠 Tech Stack
 
@@ -23,7 +23,7 @@ A responsive, theme-toggleable to-do list built with React.
 ### 📦 Setup
 
 ```bash
-git clone https://github.com/yourusername/todo-list.git
+git clone https://github.com/NaveenKrShukla/todo-list-react
 cd todo-list
 npm install
 npm start
